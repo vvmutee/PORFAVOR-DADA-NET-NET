@@ -1,0 +1,170 @@
+.order-section {
+  padding: 60px 0;
+}
+
+.order-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 40px;
+}
+
+.product-summary {
+  background: #fafafa;
+  border: 1px solid #eee;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.product-summary img {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.product-summary strong {
+  font-size: 20px;
+  display: block;
+  margin-bottom: 4px;
+}
+
+/* Form */
+.order-form {
+  background: white;
+  padding: 30px;
+  border-radius: 14px;
+  border: 1px solid #e5e5e5;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group.wide {
+  grid-column: 1 / -1;
+}
+
+label {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 6px;
+}
+
+input, select {
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: all .25s;
+}
+
+input:focus, select:focus {
+  border-color: black;
+  outline: none;
+}
+
+/* PVZ */
+.sub-title {
+  margin-top: 40px;
+  margin-bottom: 16px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.pvz-container {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 20px;
+}
+
+.pvz-list {
+  border: 1px solid #eee;
+  padding: 14px;
+  border-radius: 10px;
+  height: 320px;
+  overflow-y: auto;
+}
+
+.pvz-item {
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.pvz-item:hover {
+  background: #f3f3f3;
+}
+
+.pvz-map {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 14px;
+  height: 320px;
+}
+
+/* Buttons */
+.button-row {
+  margin-top: 40px;
+  display: flex;
+  gap: 14px;
+}
+
+.btn-black {
+  flex: 1;
+  background: black;
+  color: white;
+  padding: 14px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: .25s;
+}
+
+.btn-black:hover {
+  opacity: .7;
+}
+
+.btn-white {
+  flex: 1;
+  background: white;
+  border: 2px solid black;
+  padding: 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: .25s;
+}
+
+.btn-white:hover {
+  background: #f5f5f5;
+}
+
+/* Mobile */
+@media(max-width: 720px){
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pvz-container {
+    grid-template-columns: 1fr;
+  }
+
+  .button-row {
+    flex-direction: column;
+  }
+}
